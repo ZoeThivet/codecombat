@@ -152,6 +152,10 @@ module.exports = class CocoRouter extends Backbone.Router
 
     'editor': go('CommunityView')
 
+    'editor/concept': go('editor/concept/ConceptSearchView')
+    'editor/concept/:conceptID': go('editor/concept/ConceptEditView')
+    'editor/standards': go('editor/standards/StandardsSearchView')
+    'editor/standards/:standardsID': go('editor/standards/StandardsEditView')
     'editor/achievement': go('editor/achievement/AchievementSearchView')
     'editor/achievement/:articleID': go('editor/achievement/AchievementEditView')
     'editor/article': go('editor/article/ArticleSearchView')
@@ -205,6 +209,8 @@ module.exports = class CocoRouter extends Backbone.Router
     'i18n/product/:handle': go('i18n/I18NEditProductView')
     'i18n/article/:handle': go('i18n/I18NEditArticleView')
     'i18n/resource_hub_resource/:handle': go('i18n/I18NEditResourceHubResourceView')
+    'i18n/concept/:handle': go('i18n/I18NEditConceptView')
+    'i18n/standards/:handle': go('i18n/I18NEditStandardsCorrelationView')
 
     'identify': go('user/IdentifyView')
     'il-signup': go('account/IsraelSignupView')
