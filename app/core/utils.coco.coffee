@@ -1,3 +1,4 @@
+_ = require 'lodash'
 slugify = _.str?.slugify ? _.string?.slugify # TODO: why _.string on client and _.str on server?
 
 isCodeCombat = true
